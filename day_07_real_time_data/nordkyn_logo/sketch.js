@@ -1,12 +1,12 @@
-let windDirection = 360;
-let windSpeed = 10;
-let temperature = 303.15;
+let windDirection = 0;
+let windSpeed = 0;
+let temperature = 0;
 let stationName = "noname";
 
 let colScale = d3
   .scaleLinear()
   .domain([-30, 0, 30])
-  .range(["#0000ff", "#eeeeee", "#ff0000"]);
+  .range(["#0000ff", "#aaaaaa", "#ff0000"]);
 
 let lat = 47.09010078625099;
 let lon = 8.273282944033701;
@@ -27,7 +27,9 @@ function setup() {
   windSpeed = weatherData.wind.speed;
   temperature = weatherData.main.temp;
 
-  temperature = 30;
+
+
+
 
   angleMode(DEGREES);
   noLoop();
