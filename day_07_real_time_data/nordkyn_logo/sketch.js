@@ -99,7 +99,7 @@ function draw() {
   fill(0);
   textSize(20);
   text(stationName, 10, 20);
-  text("Wind Speed:" + windSpeed + " m/s", 10, 40);
-  text("Wind Direction:" + windDirection + "°", 10, 60);
-  text("Temperature:" + temperature + "°C", 10, 80);
+  text("Wind Speed: " + windSpeed + " m/s", 10, 40);
+  text("Wind Direction: " + windDirection + "°", 10, 60);
+  text("Temperature: " + temperature + "°C", 10, 80);
 }
